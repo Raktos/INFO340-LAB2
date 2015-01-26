@@ -82,5 +82,3 @@ WHERE pt.ProductTypeName = 'Clothing' AND
 GROUP BY p.ProductID, p.ProductName
 HAVING SUM(li.Qty) >= 3
 ORDER BY ItemsSold DESC;
-
-SELECT * FROM tblPRODUCT p JOIN tblPRODUCT_TYPE pt ON pt.ProductTypeID = p.ProductTypeID WHERE pt.ProductTypeName = 'Clothing';
