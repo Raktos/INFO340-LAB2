@@ -81,4 +81,4 @@ WHERE pt.ProductTypeName = 'Clothing' AND
 		o.OrderDate BETWEEN '2006-01-01' and '2006-12-31'
 GROUP BY p.ProductID, p.ProductName
 HAVING SUM(li.Qty) >= 3
-ORDER BY ItemsSold DESC;
+ORDER BY ItemsSold  DESC, p.ProductName ASC;
